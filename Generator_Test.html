@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="../CSS.css" rel="stylesheet" type="text/css">
+	<link href="../CSSWithNavbar.css" rel="stylesheet" type="text/css">
+	<link href="../Portfolio_CSS.css" rel="stylesheet" type="text/css">
+	<link href="../magicBallCSS.css" rel="stylesheet" type="text/css">
+<title>Generator_Test_Code</title>
+</head>
+<body>
+    <div class="text">Ask your question?</div>
+    <input type="text" placeholder="question">
+    <button type="button" >Ask</button>
+    <div class="message"></div>
+    <script>
+    const answerArray = ["It will work","Maybe maybe not","Probably Not","Highly Likely","I don't know","Yes","No"];
+    const message = document.querySelector(".message");
+    const question = document.querySelector("input");
+    const button = document.querySelector("button");
+    button.addEventListener("click",function(){
+        let res = Math.floor(Math.random()*answerArray.length);
+        message.innerText = question.value + " " + answerArray[res];
+        question.value = "";
+    })
+    </script>
+</body>
+</html>

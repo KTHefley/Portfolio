@@ -1,0 +1,20 @@
+@charset "utf-8";
+*{
+	text-align: center;
+}
+iframe{
+	width:85%;
+	border: 3px solid #640001;
+	height: 18em;
+}
+button{
+	background-color: #7E7A7A;
+	border: 3px solid #640001;
+	color: #ffffff;
+	min-width: 125px; 
+	text-decoration: none;
+	padding: 25px;
+	margin: 5px;
+	background:#2a2a2a;
+	text-align: center;
+}

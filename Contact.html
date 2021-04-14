@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<!--CSS-->
+	<link href="../CSSWithNavbar.css" rel="stylesheet" type="text/css">
+	<link href="../CSS.css" rel="stylesheet" type="text/css">
+<!--JavaScript-->
+	<script src="../JavaScript/Navbar.js" defer></script>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="brand-title">Portfolio</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+				</a>
+		<div class="navbar-links">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<form action="Results.html" method="GET" enctype="multipart/form-data">
+	<ul>
+		<li class="form input contact name">
+			<label for="name"></label>
+			<input type="text" name="name" id="name" placeholder="Name" required>
+		</li>
+		<li class="form input contact email">
+			<label for="email"></label>
+			<input type="email" name="email" id="email" placeholder="Email" required>
+		</li>
+		<li class="form input info subject">
+			<label for="subject"></label>
+			<input type="text" name="subject" id="subject" placeholder="Subject" required>
+		</li>
+		<li class="form input info message">
+			<label for="message"></label>
+			<textarea name="message" id="message" placeholder="Message" required></textarea>
+		</li>
+		<span class="buttons">
+			<li class="form reset">
+				<label for="reset"></label>
+				<input class="buttons" type="reset" name="reset" id="reset" value="Reset">
+			</li>
+			<li class="form submit">
+				<label for="submit"></label>
+				<input class="buttons" type="submit" name="submit" id="submit" value="Sumbit">
+			</li>
+		</span>
+	</ul>
+	</form>
+	<div class="portfolio">
+		<a href="Portfolio.html">Portfolio</a>
+	</div>
+</body>
+</html> 

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Results</title>
+<link href="../CSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="results"></div>
+	<a href="Contact.html">Back to Contact page</a>
+	<script>
+	const resultsList = document.getElementById('results')
+	new URLSearchParams(window.location.search).forEach((value,name) => {
+		resultsList.append(`${name}: ${value}`)
+		resultsList.append(document.createElement('br'))
+	})
+	</script>
+</body>
+</html>

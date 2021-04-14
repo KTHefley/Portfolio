@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="../../CSS.css" rel="stylesheet" type="text/css">
+	<link href="../../CSSWithNavbar.css" rel="stylesheet" type="text/css">
+	<link href="../../Portfolio_CSS.css" rel="stylesheet" type="text/css">
+	<link href="../../headsTailsCSS.css" rel="stylesheet" type="text/css">
+<title>Heads_Or_Tails</title>
+</head>
+<body>
+	<div class="message headsText"></div>
+	<div class="headsButtons">
+	<button type="button">Heads</button>
+	<button type="button">Tails</button>
+	</div>
+	<script>
+		const coinArray = ["Heads","Tails"];
+		let score = [0,0];
+		const message = document.querySelector(".message");
+		const buttons = document.querySelectorAll("button");
+		console.log(buttons);
+		for(let i = 0; i < buttons.length; i++){
+			console.log(buttons[i]);
+			buttons[i].addEventListener("click",tossCoin);
+		}// End of for
+		function tossCoin(e){
+			let playerGuess = e.target.innerText;
+			let coinToss = Math.floor(Math.random()*2);
+			let computerGuess = coinArray[coinToss];
+			if(playerGuess === computerGuess){
+					output = "Player Wins";
+					score[0]++;
+				}else{
+					output = "Computer Wins";
+					score[1]++;
+				}
+			message.innerHTML = `Player Selected ${playerGuess} <br> Computer Selected ${computerGuess} <br> ${output} <br> Player ${score[0]} Computer ${score[1]}`;
+		}// End of tossCoin
+	</script>
+</body>
+</html>
